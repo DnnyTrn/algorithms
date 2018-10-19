@@ -1,4 +1,4 @@
-Problem
+Problem <br>
   Given a list of jobs with their deadlines and penalties, design a greedy algorithm that schedules the jobs so that
   a minimal penalty is incurred. 
   
