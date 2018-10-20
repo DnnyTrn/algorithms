@@ -1,5 +1,5 @@
 <h1> Problem </h1>
-<p> </p>
+<p> Other names: class scheduling problem</p>
 <h1> Solution </h1>
 <p> </p>
 <h2> Last to Start Approach </h2>
