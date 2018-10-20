@@ -18,18 +18,25 @@ void printTuple(const tuple<int,int,int> &activity)
                       << " " << get<2>(activity);
 }
 
+void printDeqTuple(const deque<tuple<int,int,int>> &deq) {
+    
+    for(auto const &i : deq) {
+        printTuple(i);
+    }
+}
+
 int main() {
 
-      /* extra example
-  tuple<int,int,int> j1 (1, 2, 100);
-  tuple<int,int,int> j2 (2, 1, 19);
-  tuple<int,int,int> j3 (3, 2, 27);
-  tuple<int,int,int> j4 (4, 1, 25);
-  tuple<int,int,int> j5 (5, 3, 15);
-  deque<tuple<int,int,int>> deq = {j1,j2,j3,j4,j5};
-  */
+    /* second example
+tuple<int,int,int> j1 (1, 2, 100);
+tuple<int,int,int> j2 (2, 1, 19);
+tuple<int,int,int> j3 (3, 2, 27);
+tuple<int,int,int> j4 (4, 1, 25);
+tuple<int,int,int> j5 (5, 3, 15);
+deque<tuple<int,int,int>> deq = {j1,j2,j3,j4,j5};
+*/
 
-//job number, deadline, penalty ( example from CLRS )
+//deadline, penalty ( example figure 16.7 from CLRS )
 tuple<int,int,int> j1(1,4,70);  
 tuple<int,int, int> j2(2,2,60); 
 tuple<int,int, int> j3(3,4,50);   
@@ -46,8 +53,6 @@ deque<const tuple<int,int,int>*> late_tasks;
 sort(deq.begin(), deq.end(), sortbythird); 
 
 int index = 0;
-
-// * algorithm starts here *
 //iterate through all jobs
 for(auto const &x : deq) {
         
@@ -55,33 +60,32 @@ for(auto const &x : deq) {
 
     for(int j = index; j >= 0; --j) 
     {
-        if(on_time_tasks.at(j) == NULL)     //an available time slot is NULL
+        if(!on_time_tasks.at(j))     //an available time slot is NULL
         {
             on_time_tasks.at(j) = &x;
             break;
         }
 
-        //no more time slots found
-        if(j == 0) {
+        //no more time slots found when j = 0
+        if(!j) {
             late_tasks.push_back(&x);
         }
-    }
-} 
-// * algorithm ends here *
 
-//printing Optimal Schedule
+    }
+
+}
+
 std::cout << "Job Number, Deadline, Penalty\n";
 std::cout << "\noptimal schedule";
     for(auto const &i : on_time_tasks) {
         if(i)
-        {
             printTuple(*i);
-        }
+      
     }
 
 std::cout << "\n\nlate tasks";
     for(auto const &i : late_tasks) {
         if(i)
-        printTuple(*i);
+            printTuple(*i);
     }
 }
