@@ -7,7 +7,7 @@
   
 <h1>Solution <br> </h1>
   <ol> 
-    <li> Sort the jobs by their penalties in descending order. Essentially the penalties represent the level of 'importance' thus allows us to </li>
+    <li> Sort the jobs by their penalties in descending order. Essentially the penalties represent the level of "importance" thus allows us to get them scheduled right away. </li>
   <li> From the first to last job, assign the jobs to the <em> latest </em> possible time slot. Eventually available time slots will run out, so ignore those jobs or add them to a "late" list. </li> 
    </ol>
   
