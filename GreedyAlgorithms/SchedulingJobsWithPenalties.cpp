@@ -18,13 +18,6 @@ void printTuple(const tuple<int,int,int> &activity)
                       << " " << get<2>(activity);
 }
 
-void printDeqTuple(const deque<tuple<int,int,int>> &deq) {
-    
-    for(auto const &i : deq) {
-        printTuple(i);
-    }
-}
-
 int main() {
 
       /* extra example
