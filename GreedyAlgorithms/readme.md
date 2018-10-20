@@ -3,7 +3,7 @@
   a minimal penalty is incurred. Jobs are completed in a <i>unit-time</i>. From CLRS, "A unit-time task is a job, such as a program to be run on a computer, that requires exactly one unit of time to complete." </p>
   
   In CLRS, this problem is called "scheduling unit-time tasks with deadlines and penalties for a single processor".
-  Other variations of this problem "maximizes profit" instead of minimizing penalties. 
+  Other variations of this problem <q>maximizes profit</q> instead of minimizing penalties. 
   
 <h1>Solution <br> </h1>
   <ol> 
