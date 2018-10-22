@@ -6,4 +6,4 @@
 <li>Example: 1, 4, 3, 2, 3, 4, 2 the product-sum is 29 = 1 + (4*3) + 2 (3*4) + 2  </li>
 <li>Example: 2, 2, 1, 3, 2, 1, 2, 2, 1, 2 the product-sum is 19 = 2*2) + 1 + (3*2) + 1 + (2*2) + 1 + 2 </li>
 </ul>
-<h1> Solution </h1>
+
