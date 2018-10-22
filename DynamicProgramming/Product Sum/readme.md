@@ -7,3 +7,5 @@
 <li>Example: 2, 2, 1, 3, 2, 1, 2, 2, 1, 2 the product-sum is 19 = (2*2) + 1 + (3*2) + 1 + (2*2) + 1 + 2 </li>
 </ul>
 
+<h1> Solution </h1>
+<p> Run time: Θ(n)
