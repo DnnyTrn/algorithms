@@ -19,9 +19,9 @@ let hotelFinding = (arr) => {
 
         for(var i = 0; i < j; ++i) {
             x = 200 - (arr[j] - arr[i]);
-            x *= x;
+            x *= x;    //penalty calculated
             hotelSequence();
-            S[j] = Math.min(S[i] + x, S[j]); 
+            S[j] = Math.min(S[i] + x, S[j]);    //The optimal cost is the min of the penalty  
         }
     }
   
