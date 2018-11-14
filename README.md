@@ -1,2 +1,2 @@
 # algorithms
-implementations of popular algorithms
+implementations of various algorithms
