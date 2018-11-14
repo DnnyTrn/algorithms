@@ -1,5 +1,5 @@
 <h1> Problem </h1>
-<p> Given a list of n integers, the product sum is the largest sum that can be formed by multiplying adjacent elements in the list. each element can be matched with at most one of it's neighbors.
+<p> Given a list of n integers, the product sum is the largest sum that can be formed by multiplying adjacent elements in the list. Each element can be matched with at most one of it's neighbors.
 </p>
 <ul>
 <li>Example given a list of 1, 2, 3, 1 the product-sum is 8 = 1 + (2*3) + 1 </li>
